@@ -6,16 +6,16 @@ const chalk = require('chalk');
 
 // Read user input
 var user = readlineSync.question(chalk.green("What's your name? "));
-console.log(("=================================================="));
+console.log(("=============================================="));
 
 // Welcoming user
 var welcome = `Hi ${user}, Welcome for playing this Quiz!!`;
 console.log(chalk.yellow(welcome));
-console.log("==================================================");
+console.log("==============================================");
 
 //Beginning the quiz
 console.log(chalk.yellow("How well do you know Deven, let's check it out..."));
-console.log("==================================================");
+console.log("==============================================");
 
 //Listing quesiton and its answers for Quiz
 var QnA = [
@@ -32,7 +32,7 @@ var QnA = [
     answer: "c"
   },
   {
-    question: "What will be his height? \n a)5.8ft \n b)6ft \n c)6.3ft \n d)Don't know \n write down an option: ",   
+    question: "What will be his height? \n a)5.8ft \n b)6ft \n c)6.3ft \n d)5.5ft \n write down an option: ",   
     answer: "b"
   },
   {
@@ -48,15 +48,15 @@ function myfunc(question,answer){
   var QnA = readlineSync.question(chalk.cyanBright(question));
 
  if(QnA.toUpperCase() == answer.toUpperCase()){
-   console.log("==================================================");
+   console.log("==============================================");
    console.log(chalk.green("Correct answer!!"));
  }
  else{
-   console.log("==================================================");
+   console.log("==============================================");
    console.log(chalk.red("Wrong answer!! \nCorrect answer is option '" + answer + "'" ));
  }
  
- console.log(chalk.blue("=================================================="));
+ console.log(chalk.blue("=============================================="));
 }
 
 //using for loop for each question
